@@ -19,6 +19,7 @@ public class TEST_CameraController : MonoBehaviour
     void Start()
     {
         camRotation = transform.localRotation;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame

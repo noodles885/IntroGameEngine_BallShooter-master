@@ -8,6 +8,7 @@ using System.Collections;
 public class MouseOrbitImproved : MonoBehaviour
 {
 
+
     public Transform target;
     public float zoomSpeed = 20.0f;
 
@@ -34,6 +35,14 @@ public class MouseOrbitImproved : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Cursor.visible = false;
+        
+        // Cursor.lockState = CursorLockMode.None;
+        
+        // Cursor.lockState = CursorLockMode.Locked;
+        
+        Cursor.lockState = CursorLockMode.Confined;
+
         Vector3 angles = transform.eulerAngles;
         x = angles.y;
         y = angles.x;
